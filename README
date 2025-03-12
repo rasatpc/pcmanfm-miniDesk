@@ -1,2 +1,10 @@
+# PCManFM Mini Desk
+
+This is a modified version of PCManFM 1.4.0, altered to create a mini desktop with the default features hidden. It can be used as a small desktop, for example, 360x640, instead of full screen (--desktop). You can drag and drop files into the ~/Desktop folder.
+
+# Hiding menubar
+PCManFM patch for hiding menubar toggle (GTK2 version), accessed via 'View' menu or pressing Ctrl+m
+https://gist.github.com/M4he/3a8171a7f39d9ba9a0cf6bb387b08061
+
 Compile the program with configure option --sysconfdir=/etc
 
