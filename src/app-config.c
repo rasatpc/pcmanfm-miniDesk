@@ -496,7 +496,7 @@ static void fm_app_config_init(FmAppConfig *cfg)
     cfg->media_in_new_tab = FALSE;
     cfg->desktop_folder_new_win = FALSE;
 
-    cfg->side_pane_mode = FM_SP_PLACES;
+    cfg->side_pane_mode = FM_SP_HIDE | FM_SP_PLACES;
 
     cfg->view_mode = FM_FV_ICON_VIEW;
     cfg->show_hidden = FALSE;
@@ -522,7 +522,8 @@ static void fm_app_config_init(FmAppConfig *cfg)
     cfg->desktop_section.show_mounts = FALSE;
 #endif
     cfg->desktop_section.folder = NULL;
-    cfg->tb.visible = cfg->tb.new_tab = cfg->tb.nav = cfg->tb.home = TRUE;
+    cfg->tb.visible = FALSE;
+    cfg->tb.new_tab = cfg->tb.nav = cfg->tb.home = TRUE;
     cfg->tb.new_win = FALSE;
     cfg->autorun_choices = g_hash_table_new_full(g_str_hash, g_str_equal,
                                                  g_free, _free_archoice);
