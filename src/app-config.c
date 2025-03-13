@@ -527,8 +527,8 @@ static void fm_app_config_init(FmAppConfig *cfg)
     cfg->tb.new_win = FALSE;
     cfg->autorun_choices = g_hash_table_new_full(g_str_hash, g_str_equal,
                                                  g_free, _free_archoice);
-    cfg->show_statusbar = TRUE;
-    cfg->show_menubar = TRUE;
+    cfg->show_statusbar = FALSE;
+    cfg->show_menubar = FALSE;
 #if FM_CHECK_VERSION(1, 2, 0)
     cfg->home_path = NULL;
     cfg->focus_previous = FALSE;
